@@ -59,6 +59,8 @@ ul { list-style: none; }
   line-height: 1.22;
   margin-bottom: 1.75rem;
   max-width: 480px;
+  margin-inline: auto;   /* Added for centering */
+  text-align: center;    /* Added for text alignment */
 }
 
 /* ── Buttons ── */
