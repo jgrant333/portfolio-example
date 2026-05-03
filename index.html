@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josiah Grant | IT Student</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">JG</div>
+
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#contact" class="nav__cta">Contact</a></li>
+    </ul>
+
+    <button class="nav__burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">IT Programming Student</p>
+      <h1 class="hero__name">Josiah Grant</h1>
+
+      <p class="hero__tagline">Building skills. Learning fast. Ready to work.</p>
+
+      <p class="hero__sub">
+        IT student at Lake Land College focused on IT support, networking fundamentals, and programming.
+        Seeking internship or entry-level IT opportunities to gain real-world experience.
+      </p>
+
+      <p class="hero__sub">
+        <a href="https://github.com/jgrant333" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/josiah-grant-lakeland" target="_blank">LinkedIn</a> |
+        <a href="resume.pdf" target="_blank">Resume</a>
+      </p>
+
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Get In Touch</a>
+        <a href="#learning" class="btn btn--outline">What I'm Working On</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__text" style="max-width: 750px; margin: 0 auto; text-align: center;">
+        <p class="section__label">About Me</p>
+        <h2 class="section__title">A quick introduction</h2>
+
+        <p>
+          I'm a second-year IT Programming student at Lake Land College.
+          I’ve built hands-on experience with troubleshooting, networking fundamentals, operating systems, and programming.
+        </p>
+
+        <p>
+          I focus on consistency, problem-solving, and improving technical skills that translate directly into IT support and entry-level roles.
+        </p>
+
+        <div class="about__badges">
+          <span class="badge">IT Programming Student</span>
+          <span class="badge">Lake Land College</span>
+          <span class="badge">IT Support Focus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <p class="section__label">What I Know</p>
+      <h2 class="section__title">Skills & Coursework</h2>
+
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <div class="skill-card__icon">💻</div>
+          <h3>IT Support</h3>
+          <p>Hardware troubleshooting, system diagnostics, and basic technical support skills.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🌐</div>
+          <h3>Networking</h3>
+          <p>IP addressing, DNS, DHCP, and foundational network troubleshooting tools.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🖥️</div>
+          <h3>Operating Systems</h3>
+          <p>Windows administration basics and introductory Linux command-line usage.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🧠</div>
+          <h3>Programming</h3>
+          <p>Java and Python fundamentals including variables, loops, methods, and basic object-oriented programming concepts.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNING -->
+  <section class="section learning" id="learning">
+    <div class="container">
+      <p class="section__label">Current Focus</p>
+      <h2 class="section__title">What I'm Working On</h2>
+
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <h3>Home Lab Practice</h3>
+          <p>Practicing Windows and Linux environments, command-line usage, and system configuration.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Networking Practice</h3>
+          <p>Studying IP configuration, DNS behavior, and real-world troubleshooting techniques.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Java & Python Practice</h3>
+          <p>Building small programs to strengthen logic, loops, methods, and object-oriented thinking.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <p class="section__label">Let's Connect</p>
+        <h2 class="section__title">Get In Touch</h2>
+
+        <p class="contact__sub">
+          I'm looking for internship or entry-level IT opportunities. Feel free to reach out.
+        </p>
+
+        <div class="contact__methods">
+          <a href="mailto:jgrant3@lakelandcollege.edu" class="contact__link">Email Me</a>
+          <a href="https://www.linkedin.com/in/josiah-grant-lakeland" target="_blank" class="contact__link">LinkedIn</a>
+          <a href="https://github.com/jgrant333" target="_blank" class="contact__link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Josiah Grant</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const burger = document.querySelector('.nav__burger');
+    const navLinks = document.querySelector('.nav__links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav__links--open');
+    });
+  </script>
+
+</body>
+</html>
